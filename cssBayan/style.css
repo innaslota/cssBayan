@@ -1,9 +1,20 @@
+:root {
+    --h1-font: 35px;
+    --h2-font: 20px;
+    --i-font: 20px;
+    --img-width: 400px;
+    --margin-center: 0 300px;
+    --padding-text: 20px;
+}
+
 h1 {
+    padding: 20px 0 0 20px;
     color: blue;
+    font-size: var(--h1-font);
 }
 
 .wrapper {
-    margin:  0 300px;
+    margin:  var(--margin-center);
     display: block;
     justify-content: center;
     align-items: center;
@@ -15,7 +26,7 @@ h1 {
 }
 
 img {
-    width: 400px;
+    width: var(--img-width);
     display: block;
     margin: 0 auto;
 }
@@ -29,8 +40,53 @@ img {
 
 h2 {
     flex: 1;
+    font-size: var(--h2-font);
+    padding-left: var(--padding-text);
 }
 
 i {
     flex: 0;
+    padding-right: var(--padding-text);
+    font-size: var(--i-font);
+}
+
+@media (min-width: 320px) {
+    :root {
+        --h1-font: 20px;
+        --h2-font: 15px;
+        --i-font: 15px;
+        --img-width: 170px;
+        --margin-center: 0 30px;
+        --padding-text: 10px;
+    }
+}
+
+@media (min-width: 820px) {
+    :root {
+        --h1-font: 30px;
+        --h2-font: 23px;
+        --i-font: 23px;
+        --img-width: 300px;
+        --margin-center: 0 200px;
+        --padding-text: 15px;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media (min-width: 1920px) {
+    :root {
+        --h1-font: 45px;
+        --h2-font: 25px;
+        --i-font: 25px;
+        --img-width: 400px;
+        --margin-center: 0 300px;
+        --padding-text: 20px;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+    }
 }
