@@ -1,3 +1,36 @@
 h1 {
     color: blue;
 }
+
+.wrapper {
+    margin:  0 300px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+.wrapper:hover {
+    cursor: pointer;
+}
+
+img {
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+h2 {
+    flex: 1;
+}
+
+i {
+    flex: 0;
+}
