@@ -57,6 +57,7 @@ input:checked ~ .text .close {
 
 input:checked ~ .content {
     display: block;
+    max-height: 100em;
 }
 
 h1 {
