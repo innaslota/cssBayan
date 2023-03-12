@@ -16,8 +16,29 @@
     border-radius: 10px;
 }
 
+.text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+h2 {
+    color: black;
+    flex: 1;
+    font-size: var(--h2-font);
+    padding-left: var(--padding-text);
+    color: rgb(255, 0, 247);
+    padding-bottom: 10px;
+}
+
 .close {
+    display: block;
     opacity: 0;
+    flex: 0;
+    padding-right: var(--padding-text);
+    font-size: 25px;
+    font-weight: 900;
     transform-origin: 0%;
     transform: translateY(-50%) rotate(0deg);
     transition: all 1s ease;
@@ -51,15 +72,8 @@ input:checked ~ .content {
 
 h1 {
     padding: 20px 0 0 20px;
-    color: rgb(9, 255, 0);
+    color: rgb(0, 0, 0);
     font-size: var(--h1-font);
-}
-
-h2 {
-    font-size: var(--h2-font);
-    padding-left: var(--padding-text);
-    color: rgb(255, 0, 247);
-    padding-bottom: 10px;
 }
 
 hr {
@@ -114,7 +128,7 @@ hr {
 @media (hover:hover) {
     
     
-    .wrapper:hover .text {
+    /*.wrapper:hover .text {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -124,15 +138,15 @@ hr {
     .wrapper:hover h2 {
         color: black;
         flex: 1;
-    }
+    }*/
     
     .wrapper:hover .close {
-        display: block;
         opacity: 1;
+        /*display: block;
         flex: 0;
         padding-right: var(--padding-text);
         font-size: 25px;
-        font-weight: 900;
+        font-weight: 900;*/
     }
 
     .wrapper:hover, label:hover {
