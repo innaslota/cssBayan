@@ -35,9 +35,16 @@
 
 .wrapper:hover .close {
     display: block;
+    opacity: 1;
     flex: 0;
     padding-right: var(--padding-text);
-    width: 15px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.close {
+    opacity: 0;
+    transform: translateY(-50%) rotate(0deg);
 }
 
 input {
@@ -48,8 +55,12 @@ input {
     display: none;
 }
 
-input:checked ~ label {
+input:checked ~ .text h2 {
     color: black;
+}
+
+input:checked ~ .text .close {
+    transform: translateY(-50%) rotate(45deg);
 }
 
 input:hover ~ .content {
@@ -87,11 +98,6 @@ hr {
     transition: all 0.5s ease-in-out;
     width: var(--img-width);
 }
-
-.close {
-    display: none;
-}
-
 
 @media (min-width: 320px) {
     :root {
