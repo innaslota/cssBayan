@@ -135,7 +135,7 @@ hr {
         font-weight: 900;
     }
 
-    .wrapper:hover {
+    .wrapper:hover, label:hover {
         cursor: pointer;
     }
 
