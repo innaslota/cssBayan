@@ -91,6 +91,10 @@ hr {
         --margin-center: 0 15%;
         --padding-text: 3%;
     }
+
+    .wrapper {
+        border-radius: 2em;
+    }    
 }
 
 @media (min-width: 820px) {
@@ -102,6 +106,7 @@ hr {
         --margin-center: 0 15%;
         --padding-text: 3%;
     }
+
 }
 
 @media (min-width: 1920px) {
@@ -122,6 +127,10 @@ hr {
 
     .wrapper:hover, label:hover {
         cursor: pointer;
+    }
+
+    h2:hover {
+        color: black;
     }
 
     img:hover {
